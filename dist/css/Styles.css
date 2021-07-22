@@ -1,22 +1,38 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html,
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
+  background: -o-radial-gradient(center -1%, circle, #1f3756, #141539);
   background: radial-gradient(circle at center -1%, #1f3756, #141539);
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow: hidden;
 }
 
@@ -42,6 +58,8 @@ body .rules__modal {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: rgba(7, 7, 19, 0.6);
   z-index: 30000;
@@ -60,8 +78,13 @@ body .rules__modal div {
   padding: 1.5rem;
   margin: auto;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 2rem;
 }
 
@@ -70,6 +93,8 @@ body .rules__modal div p {
   font-size: 2rem;
   font-weight: 700;
   color: #3b4363;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 4rem auto;
 }
@@ -83,12 +108,16 @@ body .rules__modal div p span {
   position: absolute;
   bottom: 4.25rem;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 html .rules__modal div p span:active,
 body .rules__modal div p span:active {
-  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .header {
@@ -98,9 +127,15 @@ body .rules__modal div p span:active {
   border: 3px solid #606e85;
   margin: 2rem auto;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 50;
 }
 
@@ -119,9 +154,16 @@ body .rules__modal div p span:active {
   background-color: white;
   border-radius: 5px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header .score__p {
@@ -143,10 +185,16 @@ body .rules__modal div p span:active {
   width: 19rem;
   height: 19rem;
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center center;
@@ -193,6 +241,7 @@ body .rules__modal div p span:active {
 }
 
 .buttons--results .container .placeholders .btn--results.winner::before {
+  background: -o-radial-gradient(circle, rgba(154, 171, 209, 0.6) 40%, rgba(137, 152, 186, 0.5) 40%, rgba(137, 152, 186, 0.5) 55%, rgba(98, 108, 133, 0.4) 55%, rgba(98, 108, 133, 0.4) 75%);
   background: radial-gradient(circle, rgba(154, 171, 209, 0.6) 40%, rgba(137, 152, 186, 0.5) 40%, rgba(137, 152, 186, 0.5) 55%, rgba(98, 108, 133, 0.4) 55%, rgba(98, 108, 133, 0.4) 75%);
   content: "";
   position: absolute;
@@ -212,7 +261,9 @@ body .rules__modal div p span:active {
   font-weight: 700;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: none;
   z-index: 4500;
 }
@@ -234,7 +285,9 @@ body .rules__modal div p span:active {
 }
 
 .buttons--results .replay button:active {
-  transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 .buttons--results .replay button:hover {
@@ -245,6 +298,8 @@ body .rules__modal div p span:active {
   width: 8.125rem;
   height: 8.125rem;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   place-items: center;
   position: relative;
@@ -252,7 +307,8 @@ body .rules__modal div p span:active {
 }
 
 .btn:active {
-  box-shadow: 0 0 0 0;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
   top: 4px;
 }
 
@@ -262,9 +318,12 @@ body .rules__modal div p span:active {
   height: 6.25rem;
   border-radius: 50%;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: auto;
-  box-shadow: 0 4px 1px #bdbfd6 inset;
+  -webkit-box-shadow: 0 4px 1px #bdbfd6 inset;
+          box-shadow: 0 4px 1px #bdbfd6 inset;
 }
 
 .btn div img {
@@ -272,19 +331,28 @@ body .rules__modal div p span:active {
 }
 
 .rock__border {
+  background: -webkit-gradient(linear, left bottom, left top, from(#dc2e4e), to(#dd405d));
+  background: -o-linear-gradient(bottom, #dc2e4e, #dd405d);
   background: linear-gradient(to top, #dc2e4e, #dd405d);
-  box-shadow: 0 5px 1px #991a31, 0 7px 2px #141539;
+  -webkit-box-shadow: 0 5px 1px #991a31, 0 7px 2px #141539;
+          box-shadow: 0 5px 1px #991a31, 0 7px 2px #141539;
   margin: 0 auto 3rem;
 }
 
 .paper__border {
+  background: -webkit-gradient(linear, left bottom, left top, from(#4865f4), to(#5671f5));
+  background: -o-linear-gradient(bottom, #4865f4, #5671f5);
   background: linear-gradient(to top, #4865f4, #5671f5);
-  box-shadow: 0 5px 1px #3b4dab, 0 7px 2px #141539;
+  -webkit-box-shadow: 0 5px 1px #3b4dab, 0 7px 2px #141539;
+          box-shadow: 0 5px 1px #3b4dab, 0 7px 2px #141539;
 }
 
 .scissors__border {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ec9e0e), to(#eca922));
+  background: -o-linear-gradient(bottom, #ec9e0e, #eca922);
   background: linear-gradient(to top, #ec9e0e, #eca922);
-  box-shadow: 0 5px 1px #ba7c08, 0 7px 2px #141539;
+  -webkit-box-shadow: 0 5px 1px #ba7c08, 0 7px 2px #141539;
+          box-shadow: 0 5px 1px #ba7c08, 0 7px 2px #141539;
 }
 
 @media screen and (min-width: 25rem) {
@@ -302,7 +370,9 @@ body .rules__modal div p span:active {
   body .rules__modal div p span {
     position: static;
     margin-right: 0;
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
   }
   html .rules__modal div img,
   body .rules__modal div img {
@@ -355,13 +425,16 @@ body .rules__modal div p span:active {
     width: 4.5rem;
   }
   .rock__border {
-    box-shadow: 0 9px 1px #991a31, 0 7px 2px #141539;
+    -webkit-box-shadow: 0 9px 1px #991a31, 0 7px 2px #141539;
+            box-shadow: 0 9px 1px #991a31, 0 7px 2px #141539;
   }
   .paper__border {
-    box-shadow: 0 9px 1px #3b4dab, 0 7px 2px #141539;
+    -webkit-box-shadow: 0 9px 1px #3b4dab, 0 7px 2px #141539;
+            box-shadow: 0 9px 1px #3b4dab, 0 7px 2px #141539;
   }
   .scissors__border {
-    box-shadow: 0 9px 1px #ba7c08, 0 7px 2px #141539;
+    -webkit-box-shadow: 0 9px 1px #ba7c08, 0 7px 2px #141539;
+            box-shadow: 0 9px 1px #ba7c08, 0 7px 2px #141539;
   }
   .rules__btn {
     width: 8.125rem;
@@ -375,22 +448,34 @@ body .rules__modal div p span:active {
     width: clamp(37.25rem, 90%, 58.75rem);
     height: 22rem;
     display: none;
-    align-items: center;
-    flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     gap: 3rem;
   }
   .buttons--results > * {
-    flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .buttons--results .container {
     width: 18.75rem;
     height: 18.75rem;
     letter-spacing: 2px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .buttons--results .container p {
     font-size: 1.3rem;
@@ -417,6 +502,7 @@ body .rules__modal div p span:active {
   .buttons--results .container .placeholders .btn--results.winner::before {
     content: "";
     position: absolute;
+    background: -o-radial-gradient(circle, rgba(154, 171, 209, 0.6) 35%, rgba(137, 152, 186, 0.5) 35%, rgba(137, 152, 186, 0.5) 52%, rgba(98, 108, 133, 0.4) 52%, rgba(98, 108, 133, 0.4) 75%);
     background: radial-gradient(circle, rgba(154, 171, 209, 0.6) 35%, rgba(137, 152, 186, 0.5) 35%, rgba(137, 152, 186, 0.5) 52%, rgba(98, 108, 133, 0.4) 52%, rgba(98, 108, 133, 0.4) 75%);
     width: 45.625rem;
     height: 45.625rem;
@@ -425,7 +511,9 @@ body .rules__modal div p span:active {
     left: -253px;
   }
   .buttons--results .container--house {
-    order: 3;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
   .buttons--results .replay {
     position: static;
@@ -433,8 +521,12 @@ body .rules__modal div p span:active {
     height: 7.188rem;
     font-weight: 700;
     display: none;
-    transform: translateX(0);
-    order: 2;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .buttons--results .replay p {
     font-size: 3.5rem;
