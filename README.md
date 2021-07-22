@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/profile/JeuriMorel](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/rockpaperscissors-site-iKxDzp-YR](https://your-solution-url.com)
 - Live Site URL: [https://rock-paper-scissors-fem.vercel.app/](https://your-live-site-url.com)
 
 ## Author
