@@ -44,7 +44,7 @@ body .rules__modal {
   height: 100vh;
   display: flex;
   background-color: rgba(7, 7, 19, 0.6);
-  z-index: 100;
+  z-index: 30000;
 }
 
 html .rules__modal.hideRules,
