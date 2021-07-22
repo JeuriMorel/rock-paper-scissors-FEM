@@ -214,7 +214,7 @@ body .rules__modal div p span:active {
   left: 50%;
   transform: translateX(-50%);
   display: none;
-  z-index: 50;
+  z-index: 4500;
 }
 
 .buttons--results .replay p {
